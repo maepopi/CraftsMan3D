@@ -199,7 +199,7 @@ Q: Tips to get better results.
 - Thanks to [CRM](https://github.com/thu-ml/CRM), [Wonder3D](https://github.com/xxlong0/Wonder3D/) and [LGM](https://github.com/3DTopia/LGM) for their released model about multi-view images generation. If you have a more advanced version and want to contribute to the community, we are welcome to update.
 - Thanks to [Objaverse](https://objaverse.allenai.org/), [Objaverse-MIX](https://huggingface.co/datasets/BAAI/Objaverse-MIX/tree/main) for their open-sourced data, which help us to do many validation experiments.
 - Thanks to [ThreeStudio](https://github.com/threestudio-project/threestudio) for their great repo, we follow their fantastic and easy-to-use code structure!
-- Thanks to [Direct3D](https://github.com/DreamTechAI/Direct3D) for providing their results.
+- Thanks to [Direct3D](https://github.com/DreamTechAI/Direct3D) especially [Shuang Wu](https://scholar.google.it/citations?user=SN8J78EAAAAJ&hl=zh-CN) for providing their results.
 
 
 # 📑License
