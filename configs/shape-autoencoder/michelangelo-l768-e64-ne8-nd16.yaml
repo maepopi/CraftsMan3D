@@ -1,6 +1,6 @@
 exp_root_dir: "outputs"
 name: "michelangelo-autoencoder/michelangelo-l768-e64-ne8-nd16"
-tag: "${rmspace:n${data.n_samples}+${data.supervision_type}+noise${data.noise_sigma}+${system.shape_model.embed_type}+dsample${system.shape_model.use_downsample}+pfeat${system.shape_model.point_feats}+logits${system.loss.lambda_logits}+kl${system.loss.lambda_kl}+lr${system.optimizer.args.lr},_}"
+tag: "${rmspace:n${data.n_samples}+${data.supervision_type}+${system.shape_model.embed_type}+dsample${system.shape_model.use_downsample}+pfeat${system.shape_model.point_feats}+logits${system.loss.lambda_logits}+kl${system.loss.lambda_kl}+lr${system.optimizer.args.lr},_}"
 seed: 0
 
 data_type: "Objaverse-datamodule"
