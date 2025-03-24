@@ -1,6 +1,6 @@
 exp_root_dir: "outputs"
 name: "michelangelo-autoencoder/michelangelo-l768-e64-ne8-nd16"
-tag: "${rmspace:n${data.n_samples}+${data.supervision_type}+rot${data.rotate_points}+noise${data.noise_sigma}+${system.shape_model.embed_type}+dsample${system.shape_model.use_downsample}+pfeat${system.shape_model.point_feats}+logits${system.loss.lambda_logits}+kl${system.loss.lambda_kl}+lr${system.optimizer.args.lr},_}"
+tag: "${rmspace:n${data.n_samples}+${data.supervision_type}+noise${data.noise_sigma}+${system.shape_model.embed_type}+dsample${system.shape_model.use_downsample}+pfeat${system.shape_model.point_feats}+logits${system.loss.lambda_logits}+kl${system.loss.lambda_kl}+lr${system.optimizer.args.lr},_}"
 seed: 0
 
 data_type: "Objaverse-datamodule"
@@ -8,11 +8,11 @@ data:
   root_dir: ./data/objaverse
 
   load_geometry: True           # whether to load geometry
-  geo_data_type: "tsdf" 
-  n_samples: 10240
+  geo_data_type: "sdf" 
+  n_samples: 16384
   load_supervision: True
-  supervision_type: "occupancy" 
-  n_supervision: 10240
+  supervision_type: "tsdf" 
+  n_supervision: 16384
   tsdf_threshold: 0.0078125     # threshold for truncating sdf values, used when input is sdf
 
   load_image: False             # whether to load images 
