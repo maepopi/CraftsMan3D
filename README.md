@@ -98,6 +98,7 @@ conda activate CraftsMan
 conda install cudatoolkit=11.8 -c pytorch -y
 pip install torch==2.3.0 torchvision==0.18.0 
 pip install -r docker/requirements.txt
+pip install gradio -U # If you have a "bool not iterable" problem
 ```
 
 </details>
