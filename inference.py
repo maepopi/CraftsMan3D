@@ -1,5 +1,9 @@
 from craftsman import CraftsManPipeline
 import torch
+import base64
+import json
+import requests
+
 
 # # load from local ckpt
 # pipeline = CraftsManPipeline.from_pretrained("./ckpts/craftsman", device="cuda:0", torch_dtype=torch.float32) 
